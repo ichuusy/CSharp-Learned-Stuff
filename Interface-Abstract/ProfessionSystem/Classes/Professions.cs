@@ -104,6 +104,7 @@ namespace CsharpLearn
         public void FindBuilder() => Console.WriteLine("You found a builder.");
         public void FindHost() => Console.WriteLine("You found a host.");
         public override void GetInformation() => Console.WriteLine($"Name : {name}\nAge : {age}\nJob : Architect\nNationality ID : {nationalityID}");
+        public override void GetJobInfo() => Console.WriteLine("I am an architect.");
     }
 
     public class Builder : Human, IBuilder
@@ -125,5 +126,6 @@ namespace CsharpLearn
         public void BuildApartment(int floor) => Console.WriteLine($"You built a {floor} storey apartment.");
         public void DestroyApartment() => Console.WriteLine("You destroyed a apartment.");
         public override void GetInformation() => Console.WriteLine($"Name : {name}\nAge : {age}\nJob : Builder\nNationality ID : {nationalityID}");
+        public override void GetJobInfo() => Console.WriteLine("I am a builder.");
     }
 }
