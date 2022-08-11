@@ -82,7 +82,6 @@ namespace CoffeeShop
             {
                 if (_customerCheckService.CheckIfRealPerson(customer)) 
                 {
-                    Console.Write("Starbucks : ");
                     base.Save(customer);
                 }
             }
