@@ -11,11 +11,11 @@ namespace CoffeeShop
         static void Main(string[] args)
         {
             Customer customer = new Customer("ichuusy","durden",31);
-            StarbucksCustomerService starbucksCustomerService = new StarbucksCustomerService(new CustomerCheckService());
+            BaseCustomerService starbucksCustomerService = new StarbucksCustomerService(new CustomerCheckService());
             starbucksCustomerService.Save(customer);
             starbucksCustomerService.BuyCoffee();
             Console.WriteLine();
-            NeroCustomerService neroCustomerService = new NeroCustomerService();
+            BaseCustomerService neroCustomerService = new NeroCustomerService();
             neroCustomerService.Save(customer);
             neroCustomerService.BuyCoffee();
             Console.ReadKey();
