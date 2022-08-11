@@ -12,6 +12,5 @@ namespace CsharpLearn
         public void KillPerson(string name) => Console.WriteLine($"{name} killed by {this.name}");
         public void JoinMission(string missionName) => Console.WriteLine($"You joined {missionName} named mission");
         public override void GetInformation() => Console.WriteLine($"Name : {name}\nAge : {age}\nGroup : Law Enforcement group\nNationality ID : {nationalityID}");
-        public abstract void GetJobInfo();
     }
 }
