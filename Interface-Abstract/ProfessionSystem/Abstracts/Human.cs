@@ -15,5 +15,6 @@ namespace CsharpLearn
         public void ChangeJob(string jobName) => Console.WriteLine($"Profession changed. New profession : {jobName}");
         public void QuitWork() => Console.WriteLine("You quitted job.");
         public virtual void GetInformation() => Console.WriteLine($"Name : {name}\nAge : {age}\nJob: None\nNationality ID : {nationalityID}");
+        public abstract void GetJobInfo();
     }
 }
