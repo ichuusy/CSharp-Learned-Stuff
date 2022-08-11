@@ -13,6 +13,5 @@ namespace CsharpLearn
         public void ThinkIdea() => Console.WriteLine("You find a idea.");
         public void Start() => Console.WriteLine("You started project.");
         public override void GetInformation() => Console.WriteLine($"Name : {name}\nAge : {age}\nGroup : Engineering group\nNationality ID : {nationalityID}");
-        public abstract void GetJobInfo();
     }
 }
