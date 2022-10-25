@@ -42,18 +42,15 @@ namespace arraystackalloc
             test -> id = 120;
             test -> repo = 320;
             
-            Console.WriteLine("test->id");
             Console.WriteLine(test->id);
             Console.WriteLine(test->repo);
 
             Github structPointer = new Github(30,120);
             Github * addressHolder = & structPointer;
             
-            Console.WriteLine("addressHolder->id");
             Console.WriteLine(addressHolder->id);
             Console.WriteLine(addressHolder->repo);
             
-            Console.WriteLine("(*addressHolder).id");
             Console.WriteLine((*addressHolder).repo);
             Console.WriteLine((*addressHolder).id);
 
